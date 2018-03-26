@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="whatsappandroid.cursoandroid.com.whatsappclone.activity.LoginActivity"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical|center_horizontal"
+    android:onClick="abrirCadastroUsuario">
+
+    <ImageView
+        android:layout_width="@dimen/largura_logo"
+        android:layout_height="@dimen/altura_logo"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/edit_login_email"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="Digite seu e-mail"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edit_login_senha"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Digite sua senha"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_logar"
+        android:id="@+id/bt_logar"
+        android:layout_below="@+id/edit_login_senha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:theme="@style/botaoPadrao"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/texto_cadastre"
+        android:id="@+id/textView"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/bt_logar"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
